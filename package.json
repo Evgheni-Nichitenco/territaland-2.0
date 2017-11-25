@@ -1,7 +1,7 @@
 {
-  "name": "territaland",
+  "name": "territaland-2",
   "version": "1.0.0",
-  "description": "01. Создаем директорию проекта\r 02. Открываем в VSCod папку проекта (или в JB WebStorm)\r 03. Создаем файл .gitignore\r 04. Создаем инициализируем гит:  **git init**\r 05. Делаем первый коммит **First commit**\r 06. Создаем удаленный репозиторий на Гитхабе или Битбукете\r 07. Связываем удаленный и локальный репозитории и делаем первый **push**,\r отправляя первый уже сделанный коммит в удаленный репозиторий.\r 08. Проверка установки Нод: **node -v**\r 09. Иницилизация NPM: **npm init**. При этом в проекте появляется файл package.json\r 10. Установка npm-пакетов. Два варианта:",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,8 +21,9 @@
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-	"gulp.spritesmith": "^6.5.1",
+    "gulp.spritesmith": "^6.5.1",
     "rimraf": "^2.6.2"
   },
   "dependencies": {},

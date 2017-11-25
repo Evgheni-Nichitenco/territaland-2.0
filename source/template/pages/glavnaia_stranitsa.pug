@@ -1,0 +1,30 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        link(rel='stylesheet' href='styles/main.min.css')
+        //-<link rel="stylesheet" href="/_st/my.css" />
+        meta(name="viewport" content="widht=device-width")
+        title $SITE_NAME$ - $MODULE_NAME$
+        <?$META_DESCRIPTION$?>
+        <?$META_KEYWORDS$?>
+
+    body
+        //$ADMIN_BAR$
+        .wrap
+            //$GLOBAL_AHEADER$
+            include ../global/aheader
+            //----End Global Aheader----
+
+            .wrap_content
+                article.home
+
+        //$GLOBAL_CLEFTER$
+        include ../global/clefter
+        //----End Global Clefter-------
+
+        //$GLOBAL_BFOOTER$
+        include ../global/bfooter
+        //----End Global Bfuter-----
