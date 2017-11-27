@@ -7,7 +7,7 @@ html(lang='ru')
         link(rel='stylesheet' href='styles/main.min.css')
         //<link rel="stylesheet" href="/_st/my.css" />
         meta(name="viewport" content="widht=device-width")
-        title $SITE_NAME$ - $MODULE_NAME$
+        title Новости сайта - $SITE_NAME$
         <?$META_DESCRIPTION$?>
         <?$META_KEYWORDS$?>
 
@@ -15,16 +15,16 @@ html(lang='ru')
         //$ADMIN_BAR$
         .wrap
             //$GLOBAL_AHEADER$
-            include ../global/aheader
-            //End Global Aheader
+            include ../../global/aheader
+            //End Glogbal_Aheader
 
             .wrap_content
-                include ../content/cont_glavnaia_stranitsa
+                include ../../content/cont_novosty_arhive
 
-        //$GLOBAL_CLEFTER$
-        include ../global/clefter
+        //$GLOBAL_CLEFTERCON$
+        include ../../global/cleftercon
         //End Global Clefter
 
         //$GLOBAL_BFOOTER$
-        include ../global/bfooter
-        //End Global Bfuter
+        include ../../global/bfooter
+        //End Global_Bfooter
