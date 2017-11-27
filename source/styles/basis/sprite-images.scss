@@ -1,0 +1,34 @@
+//- Sprite Header
+.header {
+  &__red-square {
+    @include sprite($t3);
+
+    &__registratsia_reg-01 {
+      @include sprite($t4);
+    }
+
+    &__registratsia_reg-02 {
+      @include sprite($t5);
+    }
+
+    &__registratsia_reg-03 {
+      @include sprite($t8);
+    }
+  }
+
+  &__black-register {
+    @include sprite($t9);
+  }
+}
+
+//- Sprite Sidebar
+.sidebar__block {
+
+  &_zagolovok {
+    @include sprite($t17);
+  }
+
+  &_footer {
+    @include sprite($t19);
+  }
+}

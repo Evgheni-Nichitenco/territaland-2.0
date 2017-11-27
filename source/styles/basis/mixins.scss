@@ -1,0 +1,15 @@
+@mixin antiq {
+  font-family: "Book Antiqua";
+};
+
+@mixin italic {
+  font-family: "Book Antiqua Italic";
+}
+
+@mixin bold {
+  font-family: "Book Antiqua Bold";
+}
+
+@mixin itabold {
+  font-family: "Book Antiqua Bold Italic";
+}

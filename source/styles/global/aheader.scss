@@ -9,15 +9,6 @@
     width: 10px;
     height: 10px;
     background-color: #000000;
-
-    &_right {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 10px;
-      height: 10px;
-      background-color: #000000;
-    }
   }
 
   &__img {
@@ -56,7 +47,7 @@
     top: 50px;
     width: 157px;
     height: 157px;
-    background-image: url("/images/3.gif");
+    //-background-image: url("/images/3.gif");
 
     &_terra,
     &_incognita {
@@ -64,7 +55,7 @@
       margin-top: 20px;
       width: 157px;
       height: 26px;
-      font-size: 22px;
+      font-size: 1.833rem;
       font-family: "Times New Roman", serif;
       color: #fffadf;
       text-align: center;
@@ -77,9 +68,8 @@
       display: block;
       width: 157px;
       margin-top: 10px;
-      font-size: 14pt;
-      font-family: "Book Antiqua", Verdana, Tahoma;
-      font-style: italic;
+      font-size: 1.55rem;
+      @include italic;
       text-align: center;
       color: #fffadf;
     }
@@ -110,7 +100,7 @@
     top: 167px;
     width: 383px;
     height: 30px;
-    background-image: url("/images/9.gif");
+    //-background-image: url("/images/9.gif");
 
     &_01 {
       display: inline;
@@ -124,13 +114,17 @@
         margin-left: 10px;
         a {
           color: #EA1218;
-          font-size: 12px;
         }
 
         span {
-          font-size: 12px;
+          padding-left: 5px;
         }
       }
     }
   }
+}
+
+.icon-home {
+  width: 28px;
+  height: 28px;
 }

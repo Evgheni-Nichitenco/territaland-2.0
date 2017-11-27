@@ -1,0 +1,30 @@
+.podskazka {
+  display: inline;
+  position: relative;
+
+  &:hover:after {
+    //background: #333;
+    background: rgba(204,102,0,.8);
+    border-radius: 5px;
+    bottom: 10px;
+    color: #fff;
+    content: attr(rel);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+    width: auto;
+  }
+}
+
+.podskazka:hover:before { /* Добавляем стрелочку внизу блока всплывающей подсказки */
+  border: solid;
+  border-color: #cc6600 transparent;
+  border-width: 10px 4px 0 10px;
+  bottom: 0;
+  content: "";
+  left: 50%;
+  position: absolute;
+  z-index: 99;
+}
+

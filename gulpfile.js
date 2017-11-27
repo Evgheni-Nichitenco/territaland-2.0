@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const pug = require('gulp-pug');
 const sass = require('gulp-sass');
-// const spritesmith = require('gulp.spritesmith');
+const spritesmith = require('gulp.spritesmith');
 const rimraf = require('rimraf');
 const rename = require('gulp-rename');
 
@@ -37,16 +37,16 @@ gulp.task('styles:compile', function () {
 
 
 // Sprite
-// gulp.task('sprite', function (cb) {
-//     var spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
-//         imgName: 'sprite.png',
-//         imgPath: '../images/sprite.png', // Добавлена строчка
-//         cssName: 'sprite.scss'
-//     }));
-//     spriteData.img.pipe(gulp.dest('build/images/'));
-//     spriteData.css.pipe(gulp.dest('source/styles/basis/'));
-//     cb();
-// });
+gulp.task('sprite', function (cb) {
+    var spriteData = gulp.src('source/images/icons/*.png').pipe(spritesmith({
+        imgName: 'sprite.png',
+        imgPath: '../images/sprite.png', // Добавлена строчка
+        cssName: 'sprite.scss'
+    }));
+    spriteData.img.pipe(gulp.dest('build/images/'));
+    spriteData.css.pipe(gulp.dest('source/styles/basis/'));
+    cb();
+});
 
 
 /* Delite */
@@ -80,7 +80,7 @@ gulp.task('watch', function () {
 
 gulp.task('default', gulp.series(
     'clean',
-    gulp.parallel('templates:compile', 'styles:compile', 'copy'),
+    gulp.parallel('templates:compile', 'styles:compile', 'sprite', 'copy'),
     gulp.parallel('watch', 'browser-sync')
     )
 );

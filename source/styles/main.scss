@@ -1,6 +1,14 @@
+@charset "UTF-8";
+
 @import "basis/fonts";
+@import "basis/sprite";
+@import "basis/sprite-images";
+@import "basis/mixins";
 @import "basis/base";
+@import "basis/podskazka";
 
 @import "global/aheader";
 @import "global/clefter";
 @import "global/footer";
+
+@import "content/glavnaia_stranitsa";
