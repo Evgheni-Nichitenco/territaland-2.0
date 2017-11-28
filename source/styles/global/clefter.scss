@@ -26,6 +26,7 @@
       background-size: 300px auto;
       padding: 1px 10px 1px 10px;
       min-height: 50px;
+      text-align: center;
     }
 
     &_footer {
@@ -70,3 +71,31 @@
     }
   }
 }
+
+.searchForm {
+
+  .schQuery,
+  .schBtn {
+    margin-top: 5px;
+  }
+
+  .queryField {
+    width: 90%;
+  }
+}
+
+.ava-gost{
+  width: 41px;
+  height: 50px;
+  background-image: url("/images/avatar.jpg");
+  margin: 0 auto;
+}
+
+.privet,
+.username,
+.profil {
+  line-height: 3rem;
+  font-size: 1.5rem;
+  font-family: "Book Antiqua Bold";
+}
+

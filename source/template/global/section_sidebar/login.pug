@@ -1,0 +1,30 @@
+.login
+    <?if($LOGIN_FORM$)?>
+    span.privet.
+        Привет, Гость!
+
+    .ava-gost
+
+    div
+        span.username $LOGIN_FORM$
+        <?else?>
+        <?if($USER_LOGGED_IN$)?>
+        span.username &nbsp; Привет, $USERNAME$!
+
+    div
+        span
+            <?if($USER_AVATAR_URL$)?>
+            img(src="$USER_AVATAR_URL$")
+            <?else?>
+            img(src="/images/novoavatar.png")
+            <?endif?>
+    div
+        span.profil
+            a(title="Мой профиль" href="$PERSONAL_PAGE_LINK$")
+                span.profil Мой профиль
+
+    div
+        a(title=Выход href="$LOGOUT_LINK$")
+            span.profil Выход
+        <?endif?>
+    <?endif?>

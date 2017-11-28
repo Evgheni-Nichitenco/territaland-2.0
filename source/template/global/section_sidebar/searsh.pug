@@ -1,0 +1,6 @@
+.searchForm
+    form(action='/search/', style='margin:0', method='get', onsubmit='this.sfSbm.disabled=true')
+        .schQuery
+            input.queryField(type='text', size='20', maxlength='60', name='q')
+        .schBtn
+            input.searchSbmFl(type='submit', value='Найти', name='sfSbm')
